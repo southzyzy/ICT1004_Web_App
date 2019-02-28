@@ -3,50 +3,40 @@
 	Infocomm Technology Cluster, Singapore Institute of Technology.
 */
 
-$(document).ready(function(){
 
-	function scroll_threshold(limit) {
-		var pos = Math.round($(window).scrollTop());
-
-		if (pos > limit) {
-			return true;
-		} else {
-			return false;
-		}
-	}
+function update_nav_state(initial) {
+	initial = initial || false;
 
 	var page_width = $(window).width();
-	var banner_pos = $("#home-banner").offset().top + $("#home-banner").height();
+	var pos = Math.round($(window).scrollTop());
+	var limit = ($("#home-banner").offset().top) + ($("#home-banner").height());
 
-	$(window).resize(function() {
-		// Update the page_width variable upon resize.
-		page_width = $(window).width();
-
-		if (page_width < 768) {
-			// Assume mobile display.
+	if (page_width < 768) {
+		// Assume mobile display.
+		if ($(".site-navbar-top").css("display") === "none") {
 			$(".site-navbar-top").slideDown();
-		} else {
-			if (scroll_threshold(banner_pos)) {
-		        $(".site-navbar").removeClass("transparent-nav");
-		        $(".site-navbar-top").slideDown();
-		    } else {
-		        $(".site-navbar").addClass("transparent-nav");
-		        $(".site-navbar-top").slideUp();
-		    }
 		}
-	});
+	} else {
+		// Desktop-size display.
+		if (pos > limit) {
+	        $(".site-navbar").removeClass("transparent-nav");
+	        $(".site-navbar-top").slideDown();
+	    } else {
+	        $(".site-navbar").addClass("transparent-nav");
 
-	if (page_width >= 768) {
-		// Check if we are on a big enough display width.
-		$(window).on("scroll",function(){
-		    if (scroll_threshold(banner_pos)) {
-		        $(".site-navbar").removeClass("transparent-nav");
-		        $(".site-navbar-top").slideDown();
-		    } else {
-		        $(".site-navbar").addClass("transparent-nav");
-		        $(".site-navbar-top").slideUp();
-		    }
-		});
+	        if (initial === true) {
+	        	$(".site-navbar-top").hide();
+	        } else {
+	        	$(".site-navbar-top").slideUp();
+	        }
+	    }
 	}
+}
 
+$(document).ready(function() {
+	// Run function at least once.
+	update_nav_state(true);
+
+	// Run function on scroll and window resize events.
+	$(window).on("scroll resize", update_nav_state);
 });

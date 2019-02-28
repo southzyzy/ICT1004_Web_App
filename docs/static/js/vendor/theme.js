@@ -50,7 +50,7 @@ jQuery(document).ready(function($) {
 
 		$('.js-logo-clone').clone().appendTo('.site-mobile-menu-logo');
 
-		$('<span class="ion-ios-close js-menu-toggle"></div>').prependTo('.site-mobile-menu-close');
+		//$('<span class="js-menu-toggle"></div>').prependTo('.site-mobile-menu-close');
 		
 
 		$('.js-clone-nav').each(function() {
@@ -65,7 +65,7 @@ jQuery(document).ready(function($) {
       $('.site-mobile-menu .has-children').each(function(){
         var $this = $(this);
         
-        $this.prepend('<span class="arrow-collapse collapsed">');
+        $this.prepend('<span class="arrow-collapse collapsed"><i class="fas fa-angle-down"></i>');
 
         $this.find('.arrow-collapse').attr({
           'data-toggle' : 'collapse',
@@ -119,7 +119,7 @@ jQuery(document).ready(function($) {
 		}) 
 
 		// click outisde offcanvas
-		$(document).mouseup(function(e) {
+		$(document).bind("mouseup touchend", function(e) {
 	    var container = $(".site-mobile-menu");
 	    if (!container.is(e.target) && container.has(e.target).length === 0) {
 	      if ( $('body').hasClass('offcanvas-menu') ) {

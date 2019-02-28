@@ -3,8 +3,20 @@
 	display: none;
 }
 
+.text-color-applered {
+	color: #BD2527 !important;
+}
+
+.border-applered {
+	border-color: #BD2527 !important;
+}
+
 
 /* Navigation override */
+.site-navbar-top {
+	padding-bottom: 15px !important;
+}
+
 @media (min-width: 768px) {
 	.site-navbar-fixed {
 		top: 0;
@@ -12,26 +24,29 @@
 		width: 100%;
 		transition: all 0.5s ease;
 	}
-}
 
-@media (min-width: 768px) {
 	.transparent-nav {
-		background: linear-gradient(to bottom, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%);
+		background: linear-gradient(to bottom, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0) 100%);
+	}
+
+	.transparent-nav > .site-navbar-top {
+		border-bottom: 1px solid rgba(0, 0, 0, 0);
+		opacity: 0;
+		transition: all 0.5s ease;
 	}
 
 	.transparent-nav .site-navigation .site-menu > li > a {
 		color: rgb(250, 250, 250);
 		text-shadow: 2px 3px 5px rgba(40, 40, 40, 0.7);
 	}
-}
 
-.site-navbar-top {
-	padding-bottom: 15px !important;
-}
+	.transparent-nav .site-navigation .site-menu > li.active > a {
+		color: #BD2527;
+		text-shadow: 2px 3px 5px rgba(40, 40, 40, 0.45);
+	}
 
-@media (min-width: 768px) {
-	.site-navbar .site-navbar-top {
-		padding-top: 20px !important;
+	.site-navbar-top {
+		padding-top: 15px !important;
 	}
 }
 
@@ -40,16 +55,24 @@
 	width: auto;
 }
 
+.arrow-collapse > .fa,
+.arrow-collapse > .fab,
+.arrow-collapse > .fal,
+.arrow-collapse > .far,
+.arrow-collapse > .fas {
+	padding-top: 0.6em;
+}
 
-/* "Jumbotron" */
+
+/* Landing Page "Jumbotron"/ Banner */
 .site-blocks-cover {
 	background-image: url("../img/banner.png");
 	background-position: center;
 	background-size: cover;
-	min-height: 720px;
+	min-height: 740px;
 }
 
 
 .text-stroke-border {
-	text-shadow: 2px 3px 5px rgba(40, 40, 40, 0.7);
+	text-shadow: 3px 3px 5px rgba(40, 40, 40, 0.7);
 }
