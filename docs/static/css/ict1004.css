@@ -76,3 +76,20 @@
 .text-stroke-border {
 	text-shadow: 3px 3px 5px rgba(40, 40, 40, 0.7);
 }
+
+/* Menu */
+img.img-fluid {
+	width: 253px;
+	height: 253px;
+}
+
+.block-4 {
+	width:255px;
+	height:410px;
+}
+
+
+.price {
+	position: relative;
+	bottom: 0;
+}
