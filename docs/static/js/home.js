@@ -9,7 +9,7 @@ function update_nav_state(initial) {
 
 	var page_width = $(window).width();
 	var pos = Math.round($(window).scrollTop());
-	var limit = ($("#home-banner").offset().top) + ($("#home-banner").height());
+	var limit = ($("#home-banner").offset().top + $("#home-banner").height()) - $(".site-navigation").height();
 
 	if (page_width < 768) {
 		// Assume mobile display.

@@ -1,0 +1,20 @@
+img.img-menu {
+	width: 253px;
+	height: 253px;
+}
+
+.block-4 {
+	width:255px;
+	height:410px;
+}
+
+.price {
+	position: relative;
+	bottom: 0;
+}
+
+
+/* Temporary override */
+.text-primary {
+	color: #6c757d!important;
+}
