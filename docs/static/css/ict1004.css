@@ -170,3 +170,8 @@ a:hover, a:focus {
 	object-fit: cover;
 	min-height: 239px;
 }
+
+/* About */
+.black {
+	color:#000000;
+}
