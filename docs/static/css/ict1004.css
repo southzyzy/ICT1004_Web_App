@@ -210,3 +210,50 @@ a:hover, a:focus {
 	object-fit: cover;
 	min-height: 239px;
 }
+
+#promoForm label {
+    color: black;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+#promoForm input{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: solid 1.5px lightgrey;
+    border-radius: 0px;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+}
+
+#promoForm .form-control:focus {
+    border-color: #BD2527;
+    -webkit-transition: border-color 770ms linear;
+    -ms-transition: border-color 770ms linear;
+    transition: border-color 770ms linear;
+}
+
+#promoForm .form-control::placeholder {
+    color: lightgrey;
+}
+
+#promoForm .form-group {
+    padding-top: 2em;
+}
+
+#promoForm label {
+    margin-top: 0.6em;
+}
+
+#submitCol {
+    padding-left: 0px;
+    padding-right: 0px;
+    padding: 1em 0 4em 0;
+}
+
+#submitCol button[type=submit] {
+    background-color: #BD2527;
+    border-color: #BD2527;
+}
