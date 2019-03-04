@@ -47,7 +47,9 @@ body {
 .border-applered {
 	border-color: #BD2527 !important;
 }
-
+.img-border {
+	border: 1px solid black;
+}
 .btn-applered {
 	background-color: rgba(0, 0, 0, 0);
 	color: #BD2527;
