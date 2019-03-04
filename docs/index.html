@@ -59,27 +59,30 @@
 			<nav class="site-navigation text-right text-md-center" role="navigation">
 				<div class="container">
 					<ul class="site-menu js-clone-nav d-none d-md-block">
-						<li class="active" id="nav-index">
+						<li class="active">
 							<a href="index.html">Home</a>
 						</li>
-						<li id="nav-about">
-							<a href="about.html">About</a>
+						<li class="has-children">
+							<a href="#" class="no-href">About</a>
+							<ul class="dropdown">
+								<li><a href="about.html">Our Brand</a></li>
+								<li><a href="about.html#recognision">Recognision</a></li>
+							</ul>
 						</li>
-						<li id="nav-menu">
+						<li>
 							<a href="menu.html">Menu</a>
 						</li>
-						<li id="nav-menu">
-							<a href="feature.html">Feature</a>
+						<li>
+							<a href="menu_alt.html">Menu (Alt)</a>
 						</li>
-						<li id="nav-menu">
+						<li>
 							<a href="promotions.html">Promotions</a>
 						</li>
-						<li class="has-children" id="nav-menu">
-							<a href="#">Find Us</a>
+						<li class="has-children">
+							<a href="#" class="no-href">Find Us</a>
 							<ul class="dropdown">
 								<li><a href="location.html">Our Stores</a></li>
 								<li><a href="franchise.html">Franchise</a></li>
-								<li><a href="contact.html">Contact Us</a></li>
 							</ul>
 						</li>
 					</ul>
@@ -159,7 +162,7 @@
 								<div class="item">
 									<div class="block-4 text-center">
 										<figure class="block-4-image">
-											<img src="static/img/feature/mango_ice.jpg" alt="Mango Ice" class="img-fluid">
+											<img src="static/img/index/mango_ice.jpg" alt="Mango Ice" class="img-fluid">
 										</figure>
 										<div class="block-4-text p-4">
 											<h3><a href="menu.html">Mango Snow Ice</a></h3>
@@ -171,7 +174,7 @@
 								<div class="item">
 									<div class="block-4 text-center">
 										<figure class="block-4-image">
-											<img src="static/img/feature/chendol_ice.jpg" alt="Chendol Ice" class="img-fluid">
+											<img src="static/img/index/chendol_ice.jpg" alt="Chendol Ice" class="img-fluid">
 										</figure>
 										<div class="block-4-text p-4">
 											<h3><a href="menu.html">Chendol Snow Ice</a></h3>
@@ -183,7 +186,7 @@
 								<div class="item">
 									<div class="block-4 text-center">
 										<figure class="block-4-image">
-											<img src="static/img/feature/red_bean.jpg" alt="Red Bean Lotus" class="img-fluid">
+											<img src="static/img/index/red_bean.jpg" alt="Red Bean Lotus" class="img-fluid">
 										</figure>
 										<div class="block-4-text p-4">
 											<h3><a href="menu.html">Red Bean Lotus</a></h3>
@@ -207,7 +210,7 @@
 					</div>
 					<div class="row align-items-center">
 						<div class="col-md-12 col-lg-7 mb-5">
-							<a href="#"><img src="static/img/feature/shopfront.jpg" alt="Temple Street Outlet" class="img-fluid rounded"></a>
+							<a href="#"><img src="static/img/index/shopfront.jpg" alt="Temple Street Outlet" class="img-fluid rounded"></a>
 						</div>
 						<div class="col-md-12 col-lg-5 text-center pl-md-5">
 							<h2><a href="promotions.html">10% off your total bill!</a></h2>
@@ -218,7 +221,7 @@
 								In celebration of the Lunar New Year, we are offering the first 15 customers at every outlet a 10% discount off their total bill*. Check out the promotions page for more details.
 							</p>
 							<p>
-								<a href="promotions.html" class="btn btn-primary btn-sm">Check it out!</a>
+								<a href="promotions.html" class="btn btn-applered-filled btn-sm">Check it out!</a>
 							</p>
 							<br />
 							<p class="text-meta">
@@ -266,6 +269,7 @@
 	<script src="static/js/vendor/owl.carousel.min.js"></script>
 	<script src="static/js/vendor/aos.min.js"></script>
 	<script src="static/js/vendor/theme.js"></script>
+	<script src="static/js/nav.js"></script>
 	<script src="static/js/home.js"></script>
 </body>
 </html>

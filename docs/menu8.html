@@ -58,27 +58,27 @@
 			<nav class="site-navigation text-right text-md-center" role="navigation">
 				<div class="container">
 					<ul class="site-menu js-clone-nav d-none d-md-block">
-						<li id="nav-index">
+						<li>
 							<a href="index.html">Home</a>
 						</li>
-						<li id="nav-about">
-							<a href="about.html">About</a>
+						<li class="has-children">
+							<a href="#" class="no-href">About</a>
+							<ul class="dropdown">
+								<li><a href="about.html">Our Brand</a></li>
+								<li><a href="about.html#recognision">Recognision</a></li>
+							</ul>
 						</li>
-						<li class="active" id="nav-menu">
+						<li class="active">
 							<a href="menu.html">Menu</a>
 						</li>
-						<li id="nav-menu">
-							<a href="feature.html">Feature</a>
-						</li>
-						<li id="nav-menu">
+						<li>
 							<a href="promotions.html">Promotions</a>
 						</li>
-						<li class="has-children" id="nav-menu">
-							<a href="#">Find Us</a>
+						<li class="has-children">
+							<a href="#" class="no-href">Find Us</a>
 							<ul class="dropdown">
 								<li><a href="location.html">Our Stores</a></li>
 								<li><a href="franchise.html">Franchise</a></li>
-								<li><a href="contact.html">Contact Us</a></li>
 							</ul>
 						</li>
 					</ul>
@@ -240,5 +240,6 @@
 	<script src="static/js/vendor/owl.carousel.min.js"></script>
 	<script src="static/js/vendor/aos.min.js"></script>
 	<script src="static/js/vendor/theme.js"></script>
+	<script src="static/js/nav.js"></script>
 </body>
 </html>
