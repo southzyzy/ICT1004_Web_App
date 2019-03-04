@@ -29,6 +29,21 @@ body {
 	color: #BD2527 !important;
 }
 
+.text-blue {
+	color: blue;
+}
+.text-red {
+	color: red;
+}
+.text-saddlebrown {
+	color: saddlebrown;
+}
+.text-darkgreen {
+	color: darkgreen;
+}
+.text-deepskyblue {
+	color: deepskyblue;
+}
 .border-applered {
 	border-color: #BD2527 !important;
 }
@@ -37,7 +52,9 @@ body {
 	background-color: rgba(0, 0, 0, 0);
 	color: #BD2527;
 }
-
+.margin-negative {
+	margin-top: -8em;
+}
 .btn-applered:hover, .btn-applered:focus {
 	color: #ff5252;
 }
