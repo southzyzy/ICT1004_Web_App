@@ -85,6 +85,66 @@
 
 		<!-- Main Content -->
 		<main>
+            
+            <!-- Carousel -->
+            <section class="site-section">
+                <div class="container">
+                    <div class="col-lg-6 offset-lg-3">
+                        <div id="bsCarousel" class="carousel slide" data-ride="carousel">
+
+                        <ul class="carousel-indicators">
+                          <li data-target="#bsCarousel" data-slide-to="0" class="active"></li>
+    <!--
+                          <li data-target="#bsCarousel" data-slide-to="1"></li>
+                          <li data-target="#bsCarousel" data-slide-to="2"></li>
+    -->
+                        </ul>
+
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner">
+
+                          <div class="carousel-item active">
+                            <img src="static/img/promotion/CNYPromo2019.jpg" alt="CNY Promotion 2019">
+                            <div class="carousel-caption">
+                              <h3>Chinese New Year</h3>
+                              <p>Promotion 2019</p>
+                            </div>
+                          </div>
+
+    <!--
+                          <div class="carousel-item">
+                            <img src="" alt="Chicago">
+                            <div class="carousel-caption">
+                              <h3>Test</h3>
+                              <p>Lorem Ipsum</p>
+                            </div>
+                          </div>
+
+                          <div class="carousel-item">
+                            <img src="" alt="New York">
+                            <div class="carousel-caption">
+                              <h3>Test</h3>
+                              <p>Lorem Ipsum</p>
+                            </div>
+                          </div>
+    -->
+
+                        </div>
+
+                        <!-- Carousel Controls -->
+                        <a class="carousel-control-prev" href="#bsCarousel" data-slide="prev">
+                          <span class="carousel-control-prev-icon"></span>
+                        </a>
+                        <a class="carousel-control-next" href="#bsCarousel" data-slide="next">
+                          <span class="carousel-control-next-icon"></span>
+                        </a>
+                      </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Carousel End -->
+
+            
             <!-- Promotions Mailing List Form -->
             <section class="site-section">
                 <div class="container">
@@ -178,19 +238,13 @@
     
     <script>
         function promoSubmit(){
-                swal({
-                    title: 'Success!',
-                    text: 'You will be notified of any new promotions',
-                    type: 'success',
-                    confirmButtonText: 'OK'
-                });
-            };
-        
-        $(document).ready(function() {
-           console.log("document ready!");
-            
-            
-        });
+            swal({
+                title: 'Success!',
+                text: 'You will be notified of any new promotions',
+                type: 'success',
+                confirmButtonText: 'OK'
+            });
+        };
     </script>
 </body>
 </html>
