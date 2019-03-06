@@ -212,6 +212,10 @@ a:hover, a:focus {
 	object-fit: cover;
 	min-height: 239px;
 }
+.category {
+	position: fixed;
+	right:2%;
+}
 
 #promoForm label {
     color: black;
