@@ -123,12 +123,12 @@
                                             <label for="email">Phone:</label>
                                         </div>
                                         <div class="col-lg-9 col-sm-12">
-                                            <input id="phone" type="text" class="form-control" placeholder="Enter your Phone Number" required>
+                                            <input id="phone" type="tel" class="form-control" placeholder="Enter your Phone Number" required>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-lg-2 offset-lg-2" id="submitCol">
-                                    <button type="button" class="btn btn-primary btn-block" onclick="promoSubmit()">Submit</button>
+                                    <button type="submit" class="btn btn-primary btn-block">Submit</button>
                                 </div>
                             </form>
                         </div>
@@ -177,20 +177,20 @@
     <script src="static/js/sweetalert2.min.js"></script>
     
     <script>
-        function promoSubmit(){
+        
+        $(document).ready(function() {
+            
+            $('#promoForm').submit(function(e){
+                e.preventDefault();
                 swal({
                     title: 'Success!',
                     text: 'You are now subscribed to our newsletter! You will be notified of any new promotions',
                     type: 'success',
                     confirmButtonText: 'OK'
                 });
-            };
-        
-        $(document).ready(function() {
-           console.log("document ready!");
+            });// End of promoForm on submit
             
-            
-        });
+        }); //End of Document Ready
     </script>
 </body>
 </html>

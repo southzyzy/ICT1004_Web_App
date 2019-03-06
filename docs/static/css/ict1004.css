@@ -259,7 +259,7 @@ a:hover, a:focus {
     padding: 1em 0 4em 0;
 }
 
-#submitCol button[type=button] {
+#submitCol button[type=submit] {
     background-color: #BD2527;
     border-color: #BD2527;
 }
