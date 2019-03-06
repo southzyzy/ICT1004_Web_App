@@ -89,17 +89,17 @@
             <section class="site-section">
                 <div class="container">
                     <div class="row justify-content-center">
-                        <div class="col-md-7 site-section-heading text-center pt-4">
+                        <div class="col-md-8 site-section-heading text-center pt-4">
                             <h2>Promotions</h2>
                             <p>Subscribe to our mailing list to receive promotions</p>
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-lg-10 offset-lg-1">
+                        <div class="col-lg-7">
                             <form id="promoForm">
                                 <div class="form-group">
                                     <div class="row">
-                                        <div class="col-lg-1 offset-lg-1 col-sm-12" name="labeldiv">
+                                        <div class="col-lg-2 col-sm-12" name="labeldiv">
                                             <label for="name">Name:</label>
                                         </div>
                                         <div class="col-lg-9 col-sm-12">
@@ -109,7 +109,7 @@
                                 </div>
                                 <div class="form-group">
                                     <div class="row">
-                                        <div class="col-lg-1 offset-lg-1 col-sm-12" name="labeldiv">
+                                        <div class="col-lg-2 col-sm-12" name="labeldiv">
                                             <label for="email">Email:</label>
                                         </div>
                                         <div class="col-lg-9 col-sm-12">
@@ -119,7 +119,7 @@
                                 </div>
                                 <div class="form-group">
                                     <div class="row">
-                                        <div class="col-lg-1 offset-lg-1 col-sm-12" name="labeldiv">
+                                        <div class="col-lg-2 col-sm-12" name="labeldiv">
                                             <label for="email">Phone:</label>
                                         </div>
                                         <div class="col-lg-9 col-sm-12">
@@ -127,14 +127,22 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-2 offset-lg-2" id="submitCol">
+                                <div class="col-lg-3 offset-lg-2" id="submitCol">
                                     <button type="submit" class="btn btn-primary btn-block">Submit</button>
                                 </div>
                             </form>
                         </div>
+                        <div class="col-lg-5">
+                            <img id="promoImg" src="static/img/promotion/CNYPromo2019.jpg" alt="CNY Promo 2019" width="100%">
+                        </div>
                     </div>
                 </div>
             </section>
+            <div id="imgModal" class="modal">
+                <span class="modalClose">&times;</span>
+                <div class="modalOverlay"></div>
+                <img id="modalImg" class="modal-content">
+            </div>
 		</main>
 		<!-- End of Main Content -->
 
@@ -189,6 +197,22 @@
                     confirmButtonText: 'OK'
                 });
             });// End of promoForm on submit
+            
+            //Popup Modal function
+            $('img[alt="CNY Promo 2019"]').click(function(){
+                console.log("click success");
+                $('#imgModal').fadeIn();
+                document.getElementById("modalImg").src = this.src;
+            });
+            
+            //Popup Modal Close Button function
+            $('.modalClose').click(function(){
+                $('#imgModal').fadeOut();
+            });
+            
+            $('.modalOverlay').click(function(){
+                $('#imgModal').fadeOut();
+            });
             
         }); //End of Document Ready
     </script>
