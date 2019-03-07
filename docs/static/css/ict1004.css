@@ -8,6 +8,14 @@ body {
 	color: black;
 }
 
+.hidden {
+	display: none;
+}
+
+.margin-negative {
+	margin-top: -5em;
+}
+
 #loading-cover {
 	position: fixed;
 	background-color: #000 !important;
@@ -17,10 +25,8 @@ body {
 	pointer-events: none;
 }
 
-.hidden {
-	display: none;
-}
 
+/* Colours */
 .text-stroke-border {
 	text-shadow: 3px 3px 5px rgba(40, 40, 40, 0.7);
 }
@@ -32,21 +38,27 @@ body {
 .text-blue {
 	color: blue;
 }
+
 .text-red {
 	color: red;
 }
+
 .text-saddlebrown {
 	color: saddlebrown;
 }
+
 .text-darkgreen {
 	color: darkgreen;
 }
+
 .text-deepskyblue {
 	color: deepskyblue;
 }
+
 .border-applered {
 	border-color: #BD2527 !important;
 }
+
 .img-border {
 	border: 1px solid black;
 }
@@ -54,9 +66,7 @@ body {
 	background-color: rgba(0, 0, 0, 0);
 	color: #BD2527;
 }
-.margin-negative {
-	margin-top: -5em;
-}
+
 .btn-applered:hover, .btn-applered:focus {
 	color: #ff5252;
 }
@@ -83,32 +93,6 @@ a:hover, a:focus {
 	color: #ff5252;
 }
 
-.accordion-heading {
-	cursor: pointer;
-}
-
-.accordion-heading-content {
-	display: inline-block;
-	padding: 0.375rem 0.75rem;
-	line-height: 1.5;
-	vertical-align: middle;
-	text-transform: uppercase;
-	font-weight: 400;
-	font-size: 1rem;
-	letter-spacing: 0.05em;
-}
-
-.store-map {
-	border: 0 !important;
-	width: 100%;
-	height: auto;
-}
-
-
-.limit-height {
-	max-height: 250px;
-}
-
 
 /* Button override */
 .btn-no-animate, .btn-no-animate:hover, .btn-no-animate:active, .btn-no-animate:focus {
@@ -119,6 +103,9 @@ a:hover, a:focus {
 
 
 /* Navigation override */
+.site-navbar {
+	z-index: 999 !important;
+}
 .site-navbar-top {
 	padding-bottom: 15px !important;
 }
@@ -141,7 +128,12 @@ a:hover, a:focus {
 		transition: all 0.5s ease;
 	}
 
-	.transparent-nav .site-navigation .site-menu > li > a {
+	.transparent-nav > .site-navigation {
+		border-bottom: 1px solid rgba(0, 0, 0, 0);
+		transition: all 0.5s ease;
+	}
+
+	.transparent-nav > .site-navigation .site-menu > li > a {
 		color: rgb(250, 250, 250);
 		text-shadow: 2px 3px 5px rgba(40, 40, 40, 0.7);
 	}
@@ -172,6 +164,7 @@ a:hover, a:focus {
 .site-navigation {
 	border-bottom: 1px solid #f3f3f4;
 }
+
 .arrow-collapse > .fa,
 .arrow-collapse > .fab,
 .arrow-collapse > .fal,
@@ -191,6 +184,14 @@ a:hover, a:focus {
 
 
 /* Menu */
+@media (min-width: 768px) {
+	.menu-category {
+		position: -webkit-sticky;
+		position: sticky;
+		top: 7em;
+	}
+}
+
 .img-menu {
 	position: relative;
 	overflow: hidden;
@@ -212,18 +213,38 @@ a:hover, a:focus {
 	object-fit: cover;
 	min-height: 239px;
 }
-.category {
-	position: fixed;
-	right:2%;
+
+.accordion-heading {
+	cursor: pointer;
 }
 
-#promoForm label {
-    color: black;
-    font-weight: 400;
-    text-transform: uppercase;
+.accordion-heading-content {
+	display: inline-block;
+	padding: 0.375rem 0.75rem;
+	line-height: 1.5;
+	vertical-align: middle;
+	text-transform: uppercase;
+	font-weight: 400;
+	font-size: 1rem;
+	letter-spacing: 0.05em;
 }
 
-#promoForm input{
+/* Our Stores */
+.store-map {
+	border: 0 !important;
+	width: 100%;
+	height: auto;
+}
+
+.limit-height {
+	max-height: 250px;
+}
+
+
+/* Franchise and Promotions Form */
+
+.mhyd-form input, .mhyd-form select {
+	background-color: rgba(0, 0, 0, 0);
     border-top: none;
     border-left: none;
     border-right: none;
@@ -234,86 +255,22 @@ a:hover, a:focus {
     padding-bottom: 0;
 }
 
-#promoForm .form-control:focus {
+.mhyd-form select:focus {
+	outline: none !important;
+    box-shadow: none !important;
+}
+
+.mhyd-form .form-control:focus, .mhyd-form select:focus {
     border-color: #BD2527;
     -webkit-transition: border-color 770ms linear;
     -ms-transition: border-color 770ms linear;
     transition: border-color 770ms linear;
 }
 
-#promoForm .form-control::placeholder {
+.mhyd-form .form-control::placeholder {
     color: lightgrey;
 }
 
-#promoForm .form-group {
+.mhyd-form .form-group {
     padding-top: 2em;
-}
-
-#promoForm label {
-    margin-top: 0.6em;
-}
-
-#submitCol {
-    padding-left: 0px;
-    padding-right: 0px;
-    padding: 1em 0 4em 0;
-}
-
-#submitCol button[type=submit] {
-    background-color: #BD2527;
-    border-color: #BD2527;
-}
-
-img[alt="CNY Promo 2019"] {
-    margin-top: 2em;
-}
-
-.modal {
-    display: none;
-    position: fixed;
-    z-index: 2000;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    background-color: rgb(0,0,0);
-    background-color: rgba(0,0,0,0.9);
-}
-
-.modal-content {
-    margin: auto;
-    display: block;
-    width: 80%;
-    max-width: 700px;
-    top: 18%;
-    z-index: 2001;
-    position: relative;
-}
-
-.modalOverlay {
-    width: 100%;
-    height: 100%;
-    z-index: 1999;
-    position: absolute;
-    overflow: hidden;
-}
-
-.modalClose {
-    position: absolute;
-    top: 15px;
-    right: 35px;
-    color: #f1f1f1;
-    font-size: 40px;
-    font-weight: bold;
-    transition: 0.3s;
-    z-index: 2000;
-    
-}
-
-.modalClose:hover,
-.modalClose:focus {
-    color: #bbb;
-    text-decoration: none;
-    cursor: pointer;
 }

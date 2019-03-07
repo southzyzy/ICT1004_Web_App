@@ -22,10 +22,10 @@
 	<link rel="stylesheet" href="static/css/vendor/owl/theme.default.min.css">
 	<link rel="stylesheet" href="static/css/vendor/aos.min.css">
 	<link rel="stylesheet" href="static/fontawesome/css/all.min.css">
+	<link rel="stylesheet" href="static/css/vendor/ekko-lightbox.min.css">
+	<link rel="stylesheet" href="static/css/vendor/sweetalert2.css">
 	<link rel="stylesheet" href="static/css/vendor/theme.css">
-	<link rel="stylesheet" href="static/css/ict1004.css">
-    <link rel="stylesheet" type="text/css" href="static/css/sweetalert2.css">
-    
+	<link rel="stylesheet" href="static/css/ict1004.css">    
 </head>
 <body>
 	<div class="site-wrap">
@@ -85,64 +85,76 @@
 
 		<!-- Main Content -->
 		<main>
-            <!-- Promotions Mailing List Form -->
-            <section class="site-section">
-                <div class="container">
-                    <div class="row justify-content-center">
-                        <div class="col-md-8 site-section-heading text-center pt-4">
-                            <h2>Promotions</h2>
-                            <p>Subscribe to our mailing list to receive promotions</p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-lg-7" data-aos="fade-up">
-                            <form id="promoForm">
-                                <div class="form-group">
-                                    <div class="row">
-                                        <div class="col-lg-2 col-sm-12" name="labeldiv">
-                                            <label for="name">Name:</label>
-                                        </div>
-                                        <div class="col-lg-9 col-sm-12">
-                                            <input id="name" type="text" class="form-control" placeholder="Enter your Full Name" required>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <div class="row">
-                                        <div class="col-lg-2 col-sm-12" name="labeldiv">
-                                            <label for="email">Email:</label>
-                                        </div>
-                                        <div class="col-lg-9 col-sm-12">
-                                            <input id="email" type="email" class="form-control" placeholder="Enter your Email Address" required>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <div class="row">
-                                        <div class="col-lg-2 col-sm-12" name="labeldiv">
-                                            <label for="email">Phone:</label>
-                                        </div>
-                                        <div class="col-lg-9 col-sm-12">
-                                            <input id="phone" type="tel" class="form-control" placeholder="Enter your Phone Number" required>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-3 offset-lg-2" id="submitCol">
-                                    <button type="submit" class="btn btn-primary btn-block">Submit</button>
-                                </div>
-                            </form>
-                        </div>
-                        <div class="col-lg-5" data-aos="fade-up">
-                            <img id="promoImg" src="static/img/promotion/CNYPromo2019.jpg" alt="CNY Promo 2019" width="100%">
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <div id="imgModal" class="modal">
-                <span class="modalClose">&times;</span>
-                <div class="modalOverlay"></div>
-                <img id="modalImg" class="modal-content">
-            </div>
+			<!-- Promotions Mailing List Form -->
+			<section class="site-section">
+				<div class="container">
+					<div class="row justify-content-center">
+						<div class="col-md-12 site-section-heading text-center pt-4">
+							<h2>Promotions</h2>
+							<p>Subscribe to our mailing list to receive the latest promotions!</p>
+						</div>
+					</div>
+
+					<div class="row pt-1">
+						<div class="col-12 col-lg-5 order-2">
+							<figure data-aos="fade-up">
+								<a href="static/img/promotions/cny2019.jpg" data-toggle="lightbox">
+									<img src="static/img/promotions/cny2019.jpg" alt="Latest promotion." class="img-fluid rounded">
+								</a>
+								<figcaption class="text-center text-muted">Chinese New Year 2019 Promotion</figcaption>
+							</figure>
+						</div>
+
+						<div class="col-12 col-lg-7 pb-5 order-1">
+							<form class="mhyd-form" id="promo-form" method="post">
+								<div class="form-group">
+									<div class="row">
+										<div class="col-1 text-right">
+											<label for="name"><i class="fas fa-user"></i></label>
+										</div>
+										<div class="col-11">
+											<input id="name" type="text" class="form-control" placeholder="Full Name" required>
+										</div>
+									</div>
+								</div>
+								<div class="form-group">
+									<div class="row">
+										<div class="col-1 text-right">
+											<label for="email"><i class="fas fa-at"></i></label>
+										</div>
+										<div class="col-11">
+											<input id="email" type="email" class="form-control" placeholder="Email Address" required>
+										</div>
+									</div>
+								</div>
+
+								<div class="form-group">
+									<div class="row">
+										<div class="col-1 text-right">
+											<label for="phone"><i class="fas fa-mobile"></i></label>
+										</div>
+										<div class="col-11">
+											<input id="phone" type="tel" class="form-control" placeholder="Phone Number" required>
+										</div>
+									</div>
+								</div>
+
+								<div class="row text-center pt-1">
+									<div class="col-md-4">
+										<!-- Filler -->
+									</div>
+									<div class="col-12 col-md-4">
+										<button type="submit" class="btn btn-block btn-applered-filled">Submit</button>
+									</div>
+									<div class="col-md-4">
+										<!-- Filler -->
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</section>
 		</main>
 		<!-- End of Main Content -->
 
@@ -180,41 +192,32 @@
 	<script src="static/js/vendor/bootstrap/4.3.1.min.js"></script>
 	<script src="static/js/vendor/owl.carousel.min.js"></script>
 	<script src="static/js/vendor/aos.min.js"></script>
+	<script src="static/js/vendor/ekko-lightbox.min.js"></script>
+	<script src="static/js/vendor/sweetalert2.min.js"></script>
 	<script src="static/js/vendor/theme.js"></script>
 	<script src="static/js/nav.js"></script>
-    <script src="static/js/sweetalert2.min.js"></script>
-    
+	
     <script>
-        
-        $(document).ready(function() {
-            
-            $('#promoForm').submit(function(e){
-                e.preventDefault();
-                swal({
-                    title: 'Success!',
-                    text: 'You are now subscribed to our newsletter! You will be notified of any new promotions',
-                    type: 'success',
-                    confirmButtonText: 'OK'
-                });
-            });// End of promoForm on submit
-            
-            //Popup Modal function
-            $('img[alt="CNY Promo 2019"]').click(function(){
-                console.log("click success");
-                $('#imgModal').fadeIn();
-                document.getElementById("modalImg").src = this.src;
-            });
-            
-            //Popup Modal Close Button function
-            $('.modalClose').click(function(){
-                $('#imgModal').fadeOut();
-            });
-            
-            $('.modalOverlay').click(function(){
-                $('#imgModal').fadeOut();
-            });
-            
-        }); //End of Document Ready
-    </script>
+		$(document).ready(function() {
+			$(document).on("click touchstart", "[data-toggle='lightbox']", function (e) {
+				e.preventDefault();
+				$(this).ekkoLightbox();
+			});
+
+			$("#promo-form").submit(function(e){
+				e.preventDefault();
+
+				swal({
+					title: "Success!",
+					text: "You are now subscribed to our newsletter! You will be notified of any new promotions.",
+					type: "success",
+					confirmButtonText: "OK"
+				});
+
+				// Clear the form.
+				$("#promo-form").trigger("reset");
+			});
+		});
+	</script>
 </body>
 </html>

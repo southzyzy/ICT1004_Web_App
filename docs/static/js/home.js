@@ -37,7 +37,7 @@ $(document).ready(function() {
 	// Run function at least once.
 	update_nav_state(true);
 
-	$("#loading-cover").fadeOut(1000);
+	$("#loading-cover").fadeOut(1250);
 
 	// Run function on scroll and window resize events.
 	$(window).on("scroll resize", update_nav_state);
