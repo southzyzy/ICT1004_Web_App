@@ -67,7 +67,7 @@ jQuery(document).ready(function($) {
         
         $this.prepend('<span class="arrow-collapse collapsed"><i class="fas fa-angle-down"></i>');
 
-        $this.find('.arrow-collapse').attr({
+        $this.attr({
           'data-toggle' : 'collapse',
           'data-target' : '#collapseItem' + counter,
         });
@@ -83,16 +83,16 @@ jQuery(document).ready(function($) {
 
     }, 1000);
 
-		$('body').on('click', '.arrow-collapse', function(e) {
-      var $this = $(this);
-      if ( $this.closest('li').find('.collapse').hasClass('show') ) {
-        $this.removeClass('active');
-      } else {
-        $this.addClass('active');
-      }
-      e.preventDefault();  
+		// $('body').on('click', '.has-children', function(e) {
+  //     var $this = $(this);
+  //     if ( $this.find('.collapse').hasClass('show') ) {
+  //       $this.removeClass('active');
+  //     } else {
+  //       $this.addClass('active');
+  //     }
+  //     e.preventDefault();  
       
-    });
+  //   });
 
 		$(window).resize(function() {
 			var $this = $(this),

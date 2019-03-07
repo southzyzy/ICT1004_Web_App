@@ -15,12 +15,14 @@ function display_top() {
 
 $(document).ready(function() {
 	$(".no-href").on("click", function(e) {
-		e.preventDefault();
-		return false;
+		if ($(window).width() >= 768) {
+			e.preventDefault();
+			return false;
+		}
 	});
 	
 
-	$("#to-top").on("click touchstart", function(e){
+	$("#to-top").on("click touchend", function(e){
 		e.preventDefault();
 		
 		$("html, body").stop().animate({
