@@ -296,7 +296,7 @@ a:hover, a:focus {
 }
 #scroll {
 	position:fixed;
-	right:150px;
+	right:50px;
 	bottom:10px;
 	cursor:pointer;
 	width:50px;
