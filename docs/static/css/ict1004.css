@@ -32,8 +32,11 @@ body {
 	bottom: 30px;
 	right: 30px;
 	z-index: 100;
-	background-color: rgba(0, 0, 0, 0.4) !important;
+	background-color: #000000 !important;
 	border: none;
+	-webkit-border-radius:60px;
+	-moz-border-radius:60px;
+	border-radius:60px;
 	-webkit-transition: none !important;
 	-moz-transition: none !important;
 	-o-transition: none !important;
@@ -42,7 +45,7 @@ body {
 }
 
 #to-top:hover {
-	background-color: rgba(0, 0, 0, 0.7) !important;
+	background-color: #e74c3c !important;
 	border: none;
 	-webkit-transition: none !important;
 	-moz-transition: none !important;
