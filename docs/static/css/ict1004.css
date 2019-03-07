@@ -115,6 +115,10 @@ a:hover, a:focus {
 		top: 0;
 		position: fixed;
 		width: 100%;
+		-webkit-transition: all 0.5s ease;
+		-moz-transition: all 0.5s ease;
+		-o-transition: all 0.5s ease;
+		-ms-transition: all 0.5s ease;
 		transition: all 0.5s ease;
 	}
 
@@ -125,11 +129,19 @@ a:hover, a:focus {
 	.transparent-nav > .site-navbar-top {
 		border-bottom: 1px solid rgba(0, 0, 0, 0);
 		opacity: 0;
+		-webkit-transition: all 0.5s ease;
+		-moz-transition: all 0.5s ease;
+		-o-transition: all 0.5s ease;
+		-ms-transition: all 0.5s ease;
 		transition: all 0.5s ease;
 	}
 
 	.transparent-nav > .site-navigation {
 		border-bottom: 1px solid rgba(0, 0, 0, 0);
+		-webkit-transition: all 0.5s ease;
+		-moz-transition: all 0.5s ease;
+		-o-transition: all 0.5s ease;
+		-ms-transition: all 0.5s ease;
 		transition: all 0.5s ease;
 	}
 
@@ -174,12 +186,17 @@ a:hover, a:focus {
 }
 
 
-/* Landing Page "Jumbotron"/ Banner */
+/* Landing Page Banner */
 .site-blocks-cover {
-	background-image: url("../img/index/banner.png");
+	background-color: rgb(0, 0, 0);
 	background-position: center;
 	background-size: cover;
 	min-height: 750px;
+	-webkit-transition: all 0.5s linear;
+	-moz-transition: all 0.5s linear;
+	-o-transition: all 0.5s linear;
+	-ms-transition: all 0.5s linear;
+	transition: all 0.5s linear;
 }
 
 
@@ -263,8 +280,10 @@ a:hover, a:focus {
 .mhyd-form .form-control:focus, .mhyd-form select:focus {
     border-color: #BD2527;
     -webkit-transition: border-color 770ms linear;
-    -ms-transition: border-color 770ms linear;
-    transition: border-color 770ms linear;
+	-moz-transition: border-color 770ms linear;
+	-o-transition: border-color 770ms linear;
+	-ms-transition: border-color 770ms linear;
+	transition: border-color 770ms linear;
 }
 
 .mhyd-form .form-control::placeholder {

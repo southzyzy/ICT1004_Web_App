@@ -37,6 +37,7 @@ $(document).ready(function() {
 	// Run function at least once.
 	update_nav_state(true);
 
+	$(".site-blocks-cover").css({"background-image": "url('static/img/index/banner.png')"});
 	$("#loading-cover").fadeOut(1250);
 
 	// Run function on scroll and window resize events.
