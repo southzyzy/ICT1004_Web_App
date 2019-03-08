@@ -91,46 +91,57 @@
                     </div>
                 </div>
 
-                <div class="text-center">
-                    <div class="custom-control custom-checkbox custom-control-inline" style="margin-bottom: 1em;">
-                        <div class="custom-control custom-checkbox">
-                            <input type="checkbox" class="custom-control-input" id="central" checked>
-                            <label class="custom-control-label" for="central">Central</label>
-                        </div>
-                        <div class="custom-control custom-checkbox custom-control-inline"
-                             style="margin-bottom: 1em;">
-                            <div class="custom-control custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" id="north" checked>
-                                <label class="custom-control-label" for="north">North</label>
-                            </div>
-                        </div>
-                        <div class="custom-control custom-checkbox custom-control-inline"
-                             style="margin-bottom: 1em;">
-                            <div class="custom-control custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" id="east" checked>
-                                <label class="custom-control-label" for="east">East</label>
-                            </div>
-                        </div>
-                        <div class="custom-control custom-checkbox custom-control-inline"
-                             style="margin-bottom: 1em;">
-                            <div class="custom-control custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" id="south" checked>
-                                <label class="custom-control-label" for="south">South</label>
-                            </div>
-                        </div>
-                        <div class="custom-control custom-checkbox custom-control-inline"
-                             style="margin-bottom: 1em;">
-                            <div class="custom-control custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" id="west" checked>
-                                <label class="custom-control-label" for="west">West</label>
-                            </div>
-                        </div>
+                <div class=" row justify-content-center mb-5">
+                    <div class="form-group col-md-6">
+                        <select class="form-control" id="region_form_selection">
+                            <option value="all">All</option>
+                            <option value="central">Central</option>
+                            <option value="north">North</option>
+                            <option value="south">South</option>
+                            <option value="east">East</option>
+                            <option value="west">West</option>
+                        </select>
                     </div>
                 </div>
+                <!--<div class="custom-control custom-checkbox custom-control-inline" style="margin-bottom: 1em;">-->
+                <!--<div class="custom-control custom-checkbox">-->
+                <!--<input type="checkbox" class="custom-control-input" id="central" checked>-->
+                <!--<label class="custom-control-label" for="central">Central</label>-->
+                <!--</div>-->
+                <!--<div class="custom-control custom-checkbox custom-control-inline"-->
+                <!--style="margin-bottom: 1em;">-->
+                <!--<div class="custom-control custom-checkbox">-->
+                <!--<input type="checkbox" class="custom-control-input" id="north" checked>-->
+                <!--<label class="custom-control-label" for="north">North</label>-->
+                <!--</div>-->
+                <!--</div>-->
+                <!--<div class="custom-control custom-checkbox custom-control-inline"-->
+                <!--style="margin-bottom: 1em;">-->
+                <!--<div class="custom-control custom-checkbox">-->
+                <!--<input type="checkbox" class="custom-control-input" id="east" checked>-->
+                <!--<label class="custom-control-label" for="east">East</label>-->
+                <!--</div>-->
+                <!--</div>-->
+                <!--<div class="custom-control custom-checkbox custom-control-inline"-->
+                <!--style="margin-bottom: 1em;">-->
+                <!--<div class="custom-control custom-checkbox">-->
+                <!--<input type="checkbox" class="custom-control-input" id="south" checked>-->
+                <!--<label class="custom-control-label" for="south">South</label>-->
+                <!--</div>-->
+                <!--</div>-->
+                <!--<div class="custom-control custom-checkbox custom-control-inline"-->
+                <!--style="margin-bottom: 1em;">-->
+                <!--<div class="custom-control custom-checkbox">-->
+                <!--<input type="checkbox" class="custom-control-input" id="west" checked>-->
+                <!--<label class="custom-control-label" for="west">West</label>-->
+                <!--</div>-->
+                <!--</div>-->
+                <!--</div>-->
+
 
                 <div class="row">
                     <!-- Outlet Card -->
-                    <div id="central_outlet_1" class="col-12 col-md-6 col-lg-4 mb-4 d-flex align-items-stretch">
+                    <div class="col-12 col-md-6 col-lg-4 mb-4 d-flex align-items-stretch central_outlet">
                         <div class="block-4 card shadow">
                             <div class="card-header bg-white">
                                 <h3>Chinatown (Temple St.)</h3>
@@ -170,7 +181,7 @@
                     </div>
                     <!-- End of Outlet Card -->
                     <!-- Outlet Card -->
-                    <div id="central_outlet_2" class="col-12 col-md-6 col-lg-4 mb-4 d-flex align-items-stretch">
+                    <div class="col-12 col-md-6 col-lg-4 mb-4 d-flex align-items-stretch central_outlet">
                         <div class="block-4 card shadow">
                             <div class="card-header bg-white">
                                 <h3>Chinatown Point</h3>
@@ -210,7 +221,7 @@
                     </div>
                     <!-- End of Outlet Card -->
                     <!-- Outlet Card -->
-                    <div id="west_outlet_1" class="col-12 col-md-6 col-lg-4 mb-4 d-flex align-items-stretch">
+                    <div class="col-12 col-md-6 col-lg-4 mb-4 d-flex align-items-stretch west_outlet">
                         <div class="block-4 card shadow">
                             <div class="card-header bg-white">
                                 <h3>Clementi Mall</h3>
@@ -250,7 +261,7 @@
                     </div>
                     <!--End of Outlet Card -->
                     <!-- Outlet Card -->
-                    <div id="north_outlet_1" class="col-12 col-md-6 col-lg-4 mb-4 d-flex align-items-stretch">
+                    <div class="col-12 col-md-6 col-lg-4 mb-4 d-flex align-items-stretch north_outlet">
                         <div class="block-4 card shadow">
                             <div class="card-header bg-white">
                                 <h3>Velocity@Novena Square</h3>
@@ -290,7 +301,7 @@
                     </div>
                     <!-- End of Outlet Card -->
                     <!-- Outlet Card -->
-                    <div id="north_outlet_2" class="col-12 col-md-6 col-lg-4 mb-4 d-flex align-items-stretch">
+                    <div class="col-12 col-md-6 col-lg-4 mb-4 d-flex align-items-stretch north_outlet">
                         <div class="block-4 card shadow">
                             <div class="card-header bg-white">
                                 <h3>Northpoint City</h3>
@@ -331,7 +342,7 @@
                     </div>
                     <!-- End of Outlet Card -->
                     <!-- Outlet Card -->
-                    <div id="south_outlet_1" class="col-12 col-md-6 col-lg-4 mb-4 d-flex align-items-stretch">
+                    <div class="col-12 col-md-6 col-lg-4 mb-4 d-flex align-items-stretch south_outlet">
                         <div class="block-4 card shadow">
                             <div class="card-header bg-white">
                                 <h3>Marina Square</h3>
@@ -371,7 +382,7 @@
                     </div>
                     <!-- End of Outlet Card -->
                     <!-- Outlet Card -->
-                    <div id="east_outlet_1" class="col-12 col-md-6 col-lg-4 mb-4 d-flex align-items-stretch">
+                    <div class="col-12 col-md-6 col-lg-4 mb-4 d-flex align-items-stretch east_outlet">
                         <div class="block-4 card shadow">
                             <div class="card-header bg-white">
                                 <h3>Beach Road</h3>
@@ -461,51 +472,92 @@
 <script src="static/js/nav.js"></script>
 
 <script type="text/javascript">
+    function disappear() {
+        $('.central_outlet').fadeOut('slow');
+        $('.north_outlet').fadeOut('slow');
+        $('.south_outlet').fadeOut('slow');
+        $('.east_outlet').fadeOut('slow');
+        $('.west_outlet').fadeOut('slow');
+    }
+
+    function filterLocation() {
+        if ($(this).val() === "all") {
+            $('.central_outlet').fadeIn('slow');
+            $('.north_outlet').fadeIn('slow');
+            $('.south_outlet').fadeIn('slow');
+            $('.east_outlet').fadeIn('slow');
+            $('.west_outlet').fadeIn('slow');
+        }
+        if ($(this).val() === "central") {
+            disappear();
+            $('.central_outlet').fadeIn('slow');
+        }
+        if ($(this).val() === "north") {
+            disappear();
+            $('.north_outlet').fadeIn('slow');
+        }
+        if ($(this).val() === "south") {
+            disappear();
+            $('.south_outlet').fadeIn('slow');
+        }
+        if ($(this).val() === "east") {
+            disappear();
+            $('.east_outlet').fadeIn('slow');
+        }
+        if ($(this).val() === "west") {
+            disappear();
+            $('.west_outlet').fadeIn('slow');
+        }
+    }
+
     $(document).ready(function () {
-        $('#central').change(function () {
-            if (this.checked) {
-                $('#central_outlet_1').fadeIn('slow');
-                $('#central_outlet_2').fadeIn('slow');
-            } else {
-                $('#central_outlet_1').fadeOut('slow');
-                $('#central_outlet_2').fadeOut('slow');
-            }
-        });
-
-        $('#north').change(function () {
-            if (this.checked) {
-                $('#north_outlet_1').fadeIn('slow');
-                $('#north_outlet_2').fadeIn('slow');
-            } else {
-                $('#north_outlet_1').fadeOut('slow');
-                $('#north_outlet_2').fadeOut('slow');
-            }
-        });
-
-        $('#east').change(function () {
-            if (this.checked) {
-                $('#east_outlet_1').fadeIn('slow');
-            } else {
-                $('#east_outlet_1').fadeOut('slow');
-            }
-        });
-
-        $('#south').change(function () {
-            if (this.checked) {
-                $('#south_outlet_1').fadeIn('slow');
-            } else {
-                $('#south_outlet_1').fadeOut('slow');
-            }
-        });
-
-        $('#west').change(function () {
-            if (this.checked) {
-                $('#west_outlet_1').fadeIn('slow');
-            } else {
-                $('#west_outlet_1').fadeOut('slow');
-            }
-        });
+        filterLocation();
+        $('#region_form_selection').change(filterLocation);
     });
+
+    //     $('#central').change(function () {
+    //         if (this.checked) {
+    //             $('#central_outlet_1').fadeIn('slow');
+    //             $('#central_outlet_2').fadeIn('slow');
+    //         } else {
+    //             $('#central_outlet_1').fadeOut('slow');
+    //             $('#central_outlet_2').fadeOut('slow');
+    //         }
+    //     });
+    //
+    //     $('#north').change(function () {
+    //         if (this.checked) {
+    //             $('#north_outlet_1').fadeIn('slow');
+    //             $('#north_outlet_2').fadeIn('slow');
+    //         } else {
+    //             $('#north_outlet_1').fadeOut('slow');
+    //             $('#north_outlet_2').fadeOut('slow');
+    //         }
+    //     });
+    //
+    //     $('#east').change(function () {
+    //         if (this.checked) {
+    //             $('#east_outlet_1').fadeIn('slow');
+    //         } else {
+    //             $('#east_outlet_1').fadeOut('slow');
+    //         }
+    //     });
+    //
+    //     $('#south').change(function () {
+    //         if (this.checked) {
+    //             $('#south_outlet_1').fadeIn('slow');
+    //         } else {
+    //             $('#south_outlet_1').fadeOut('slow');
+    //         }
+    //     });
+    //
+    //     $('#west').change(function () {
+    //         if (this.checked) {
+    //             $('#west_outlet_1').fadeIn('slow');
+    //         } else {
+    //             $('#west_outlet_1').fadeOut('slow');
+    //         }
+    //     });
 </script>
 </body>
 </html>
