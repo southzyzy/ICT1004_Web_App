@@ -446,33 +446,8 @@
     }
 
     function filterLocation() {
-        if ($(this).val() === "all") {
-            $('.central_outlet').fadeIn('slow');
-            $('.north_outlet').fadeIn('slow');
-            $('.south_outlet').fadeIn('slow');
-            $('.east_outlet').fadeIn('slow');
-            $('.west_outlet').fadeIn('slow');
-        }
-        if ($(this).val() === "central") {
-            disappear();
-            $('.central_outlet').fadeIn('slow');
-        }
-        if ($(this).val() === "north") {
-            disappear();
-            $('.north_outlet').fadeIn('slow');
-        }
-        if ($(this).val() === "south") {
-            disappear();
-            $('.south_outlet').fadeIn('slow');
-        }
-        if ($(this).val() === "east") {
-            disappear();
-            $('.east_outlet').fadeIn('slow');
-        }
-        if ($(this).val() === "west") {
-            disappear();
-            $('.west_outlet').fadeIn('slow');
-        }
+        disappear();
+        $('.' + $(this).val() + '_outlet').fadeIn('slow');
     }
 
     $(document).ready(function () {
